@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+    </head>
+<body>
+    <script>
+        var user = prompt("Seja muito bem vindo à calculadora virtual do Saulo S. Oliveira.\n\nPara ter acesso as funcionalidades responsáveis por calcular área de figuras geométricas, insira seu nome.")
+        var resposta = prompt(user + ", qual forma você deseja saber a área? Digite o número respectivo a forma que deseja. \n\n Para calcular o Retângulo, digite 1 \n Para calcular o Quadrado, digite 2 \n  Para calcular o Losango, digite 3 \n Para calcular o Trapézio, digite 4 \n Para calcular o Círculo, digite 5\n Para calcular o Triângulo, digite 6 \n Para calcular o Paralelogramo, digite 7")
+        if(resposta==1){
+            var base = parseInt(prompt("Informe o valor da base"));
+            var altura = parseInt(prompt("Informe o valor da altura"));
+            var resultado = base*altura;
+            document.write("A área da respectiva forma é "+resultado+".");
+        }else if(resposta==2){
+            var lado = parseInt(prompt("Informe o valor de um dos lados do quadrado"));
+            var resultado = lado*lado;
+            document.write("A área da respectiva forma é "+resultado+".");
+        }else if(resposta==3){
+            var diagonalMenor = parseInt(prompt("Informe o valor da diagonal menor do losango"));
+            var diagonalMaior = parseInt(prompt("Informe o valor da diagonal maior do losango"));
+            var resultado = (diagonalMaior*diagonalMenor)/2;
+            document.write("A área da respectiva forma é "+resultado+".");
+        }else if(resposta==4){
+            var baseMaior = parseInt(prompt("Informe o valor da base maior do Trapézio"));
+            var baseMenor = parseInt(prompt("Informe o valor da base maior do Trapézio"));
+            var altura = parseInt(prompt("Informe o valor da altura do Trapézio"));
+            var resultado = ((baseMaior+baseMenor)*altura)/2;
+            document.write("A área da respectiva forma é "+resultado+".");
+        }else if(resposta==5){
+            var raio = parseInt(prompt("informe o valor do raio do círculo"));
+            var resultado = 3.14*(raio*raio);
+            document.write("A área da respectiva forma é "+resultado+".");
+        }else if(resposta==6){
+            var base = parseInt(prompt("Informe o valor da base"));
+            var altura = parseInt(prompt("Informe o valor da altura"));
+            var resultado = (base*altura)/2;
+            document.write("A área da respectiva forma é "+resultado+".");
+        }else{
+            var base = parseInt(prompt("Informe o valor da base"));
+            var altura = parseInt(prompt("Informe o valor da altura"));
+            var resultado = base*altura;
+            document.write("A área da respectiva forma é "+resultado+".");
+        }
+    </script>
+</body>
+</html>
+
+<!--
+
+     SSS   A   U   U L     OOO  
+    S   S A A  U   U L    O   O 
+    S     AAA  U   U L    O   O               
+     SSS A   A U   U L    O   O           
+       S A   A U   U L    O   O
+    SSS  A   A  UUU  LLLL  OOO  
+
+       ──▄────▄▄▄▄▄▄▄────▄───
+       ─▀▀▄─▄█████████▄─▄▀▀──
+       ─────██─▀███▀─██──────
+       ───▄─▀████▀████▀─▄────
+       ─▀█────██▀█▀██────█▀──
+
+-->
