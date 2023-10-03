@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Seven</title>
+    <script>
+        
+        var gradeOne =[];
+        var i = 0;
+        var numberGrades = 6;
+        var plus = 0;
+
+        for (var i = 0; i < numberGrades; i++){
+            gradeTwo = parseInt(prompt(`Informe a ${i + 1}° nota:`));
+
+            if (gradeTwo >= 0 && gradeTwo <= 10) {
+                gradeOne.push(gradeTwo);
+               
+            } else {
+                gradeTwo = parseInt(prompt(`Informe a ${i + 1}° nota do aluno novamente:`));
+                gradeOne.push(gradeTwo);
+            }
+
+            plus = plus + gradeTwo;
+            media = (plus / numberGrades).toFixed(2);
+        }
+
+        document.write(`<p> A média das notas é: <strong>${media}</strong> </p>`);
+        document.write(`Os valores são ${gradeOne}`);
+
+    </script>
+</head>
+<body>
+</body>
+</html>

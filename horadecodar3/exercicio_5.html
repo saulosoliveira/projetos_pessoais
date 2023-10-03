@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Five</title>
+    <script>
+        
+        const numeros = 2;
+        var numberOne = parseInt(prompt('Informe o 1° número: '));
+        var numberTwo = parseInt(prompt('Informe o 2° número: '));
+
+        if(numberOne > numberTwo){
+            numberOne = parseInt(prompt('O primeiro número deve ser menor que o segundo. Informe-o novamente: ')); 
+        } 
+
+        media = (numberOne + numberTwo)/numeros;
+        alert(`A média é ${media}`);
+
+        document.write(`<h3> Os números inteiros entre ${numberOne} e ${numberTwo} são: </h3> `);
+
+        for (var numberOne; numberOne < numberTwo; numberOne++){
+            document.write(`<p> ${numberOne} </p>`);
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

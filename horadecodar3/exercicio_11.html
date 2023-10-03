@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Eleven</title>
+    <script>
+
+        var i = 0;
+        var inInterval = 0;
+        var outInterval = 0;
+
+        for (var i = 0 ; i < 10; i++) {
+            var number = parseInt(prompt(`Digite o ${i+1}° número:`));
+
+            if (number>=24 && number<=42){
+                inInterval = inInterval + 1;
+
+            } else {
+                outInterval = outInterval + 1 
+            }
+        }
+
+        document.write(`Há ${inInterval} números entre 24 e 42. <br>`);
+        document.write(`Há ${outInterval} números fora do intervalo.`)
+      
+    </script>
+</head>
+<body>
+</body>
+</html>

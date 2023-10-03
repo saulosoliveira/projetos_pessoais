@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Six</title>
+    <script>                          
+
+        var approvedStudents = 0;
+        var failedStudents = 0;
+
+
+        var resposta = prompt('Calcular média? S/N');
+
+        while (resposta == 'S'){
+            var gradeOne = parseFloat(prompt('Digite a 1° nota'));
+            var gradeTwo = parseFloat(prompt('Digite a 2° nota'));
+            media = (gradeOne + gradeTwo)/2;
+
+            if (media >= 9.5){
+                approvedStudents += 1;
+
+            } else {
+                failedStudents += 1;
+            }
+
+            resposta = prompt('Calcular média de outro aluno? S/N');
+        }
+
+        alert(`A quantidade de alunos APROVADOS foi: ${approvedStudents}`);
+        alert(`A quantidade de alunos REPROVADOS foi: ${failedStudents}`);
+    </script>
+</head>
+<body>
+</body>
+</html>
