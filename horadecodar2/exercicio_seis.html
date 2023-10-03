@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Six</title>
+
+    <script>
+        
+        var numberOne = parseInt(prompt('Informe o 1° valor: '));
+        var numberTwo = parseInt(prompt('Informe o 2° valor: '));
+        var numberThree = parseInt(prompt('Informe o 3° valor: '));
+        var numberFour = parseInt(prompt('Informe o 4° valor: '));
+
+        if (numberOne>numberTwo && numberOne>numberThree && numberOne>numberFour){
+            alert(`Ordem de números informados: \n Primeiro: ${numberOne} \n Último: ${numberFour} \n Maior Número: ${numberOne}`);
+
+        } else if (numberTwo>numberOne && numberTwo>numberThree && numberTwo>numberFour){
+            alert(`Ordem de números informados: \n Primeiro: ${numberOne} \n Último: ${numberFour} \n Maior Número: ${numberTwo}`);
+
+        } else if (numberThree>numberOne && numberThree>numberTwo && numberThree>numberFour){
+            alert(`Ordem de números informados: \n Primeiro: ${numberOne} \n Último: ${numberFour} \n Maior Número: ${numberThree}`);
+
+        } else {
+            alert(`Ordem de números informados: \n Primeiro: ${numberOne} \n Último: ${numberFour} \n Maior Número: ${numberFour}`);
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+<!--
+
+     SSS   A   U   U L     OOO  
+    S   S A A  U   U L    O   O 
+    S     AAA  U   U L    O   O               
+     SSS A   A U   U L    O   O           
+       S A   A U   U L    O   O
+    SSS  A   A  UUU  LLLL  OOO  
+
+       ──▄────▄▄▄▄▄▄▄────▄───
+       ─▀▀▄─▄█████████▄─▄▀▀──
+       ─────██─▀███▀─██──────
+       ───▄─▀████▀████▀─▄────
+       ─▀█────██▀█▀██────█▀──
+
+
+-->

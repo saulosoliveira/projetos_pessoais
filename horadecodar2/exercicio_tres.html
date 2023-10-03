@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Três</title>
+    <script>
+        
+        var numberOne = parseFloat(prompt("Insira o primeiro valor abaixo:"));
+        var numberTwo = parseFloat(prompt("Agora, insira o segundo valor abaixo:"));
+        var numberThree = parseFloat(prompt("Por último, insira o terceiro valor abaixo:"));
+
+        function searchbiggestnumber(numberOne, numberTwo, numberThree) {
+            if (numberOne !== numberTwo
+ && numberOne !== numberThree && numberTwo
+ !== numberThree) {
+                if (numberOne > numberTwo
+     && numberOne > numberThree) {
+                    document.write("Dentre os números inseridos, o valor " + numberOne + " é o maior.");
+                } else if (numberTwo
+     > numberOne && numberTwo
+     > numberThree) {
+                    document.write("Dentre os números inseridos, o valor " + numberTwo
+         + " é o maior.");
+                } else {
+                    document.write("Dentre os números inseridos, o valor " + numberThree + " é o maior.")
+                }
+            } else {
+                document.write("Por favor, insira três números diferentes.")
+            }
+        }
+
+        searchbiggestnumber(numberOne, numberTwo, numberThree);
+        
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+<!--
+
+     SSS   A   U   U L     OOO  
+    S   S A A  U   U L    O   O 
+    S     AAA  U   U L    O   O               
+     SSS A   A U   U L    O   O           
+       S A   A U   U L    O   O
+    SSS  A   A  UUU  LLLL  OOO  
+
+       ──▄────▄▄▄▄▄▄▄────▄───
+       ─▀▀▄─▄█████████▄─▄▀▀──
+       ─────██─▀███▀─██──────
+       ───▄─▀████▀████▀─▄────
+       ─▀█────██▀█▀██────█▀──
+
+
+-->

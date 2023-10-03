@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Eleven</title>
+    <script>
+       
+        var numberOne = parseInt(prompt('Digite o 1° número: '));
+        var numberTwo = parseInt(prompt('Digite o 2° número: '));
+        var operation = parseInt(prompt('Escolha a operação:\n 1. Adição\n 2. Subtração\n 3. Divisão\n 4. Multiplicação'))
+
+
+        switch (operation) {
+
+            case 1:
+                var plus = numberOne + numberTwo;
+                alert(`Soma é igual a: ${plus}`);
+                break;
+
+            case 2: 
+                var less = numberOne - numberTwo;
+                alert(`Subtração é igual a: ${less}`);
+                break;
+
+            case 3:
+                var division = numberOne / numberTwo;
+                alert(`Divisão é igual a: ${division.toFixed(2)}`);
+                break;
+
+            case 4:
+                var multiplication = numberOne * numberTwo;
+                alert(`Multiplicação é igual a: ${multiplication}`);
+                break;
+
+            default:
+                alert('Está opção não é válida. Escolha entre 1 e 4.')
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+<!--
+
+     SSS   A   U   U L     OOO  
+    S   S A A  U   U L    O   O 
+    S     AAA  U   U L    O   O               
+     SSS A   A U   U L    O   O           
+       S A   A U   U L    O   O
+    SSS  A   A  UUU  LLLL  OOO  
+
+       ──▄────▄▄▄▄▄▄▄────▄───
+       ─▀▀▄─▄█████████▄─▄▀▀──
+       ─────██─▀███▀─██──────
+       ───▄─▀████▀████▀─▄────
+       ─▀█────██▀█▀██────█▀──
+
+
+-->
