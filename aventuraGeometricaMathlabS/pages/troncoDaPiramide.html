@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png"  href="../assets/img/images/calculator.png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>MathlabS</title>
+</head>
+<header>
+    <div class="headerConfig">
+        <div><h1 class="titleOne">MathLabs</h1>
+    </div>
+</header>
+
+<body background="../assets/img/images/fundo.jpg">
+    <div class="container-md">
+        <h2>Tronco da pirâmide: sólido formado por uma secção transversal, <br> paralela à base, com faces laterais
+            trapezoidais e bases poligonais.</h2>
+        <img src="../assets/img/icons/pyramid.png">
+        <div class="conteudoText">
+            <h3>O Tronco da Pirâmide: Uma Forma Geométrica Distinta</h3>
+            <p>O tronco da pirâmide é uma forma geométrica tridimensional que se destaca por sua aparência única. Ele é
+                uma variação da forma básica da pirâmide, com a diferença de que possui uma base maior e uma base menor
+                conectadas por faces laterais. Essa transição suave entre as bases e a presença das faces laterais o
+                tornam uma figura intrigante na geometria.
+            </p>
+            <br>
+            <h3>Características Fundamentais</h3>
+            <p>O tronco da pirâmide tem algumas características distintas. Primeiro, ele possui duas bases paralelas,
+                uma maior e uma menor, que estão alinhadas uma sobre a outra. Essas bases são conectadas por várias
+                faces laterais, que são frequentemente trapezoidais, formando uma transição gradual entre as bases. A
+                altura do tronco da pirâmide é a distância entre as bases paralelas, passando perpendicularmente a elas.
+            </p>
+            <br>
+            <h3>Área Superficial e Volume</h3>
+            <p>Calcular a área superficial e o volume do tronco da pirâmide é uma tarefa matemática desafiadora, mas é
+                possível com fórmulas apropriadas. A área superficial depende das dimensões das bases, das faces
+                laterais e da altura, enquanto o volume depende da área da base maior, da base menor e da altura. As
+                fórmulas para esses cálculos variam dependendo da forma das bases.
+            </p>
+            <br>
+            <h3>Aplicações Práticas</h3>
+            <p>O tronco da pirâmide é encontrado em várias aplicações práticas, especialmente na arquitetura e na
+                engenharia. Por exemplo, muitos edifícios possuem telhados em forma de tronco de pirâmide para criar um
+                design atraente e funcional. Além disso, certos recipientes de armazenamento e tanques podem ter essa
+                forma para otimizar o espaço de armazenamento.
+            </p>
+            <br>
+            <h3>Variações e Complexidade</h3>
+            <p>Existem várias variações do tronco da pirâmide, dependendo das proporções das bases e das faces laterais.
+                À medida que essas proporções variam, a forma do tronco da pirâmide pode se tornar mais complexa ou mais
+                simples. Essas variações podem ser exploradas em geometria para compreender melhor as propriedades
+                dessas formas.
+            </p>
+            <br>
+            <h3>Conclusão</h3>
+            <p>O tronco da pirâmide é uma forma geométrica tridimensional intrigante que se destaca por sua transição
+                suave entre bases paralelas. Sua compreensão matemática e suas aplicações práticas o tornam uma figura
+                importante em diversos campos, desde a arquitetura até a engenharia, demonstrando como a geometria
+                desempenha um papel fundamental no design e na construção de estruturas e objetos do nosso cotidiano.
+            </p>
+
+        </div>
+
+        <form class="calcular">
+            <h3>Vamos calcular a área?</h3>
+            <br>
+            <div class="mb-3">
+                <label for="baseMaior" class="form-label">Base maior:</label>
+                <input type="number" id="baseMaior" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="baseMenor" class="form-label">Base menor:</label>
+                <input type="number" id="baseMenor" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="areaLateral" class="form-label">Área lateral:</label>
+                <input type="number" id="areaLateral" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="resultado">Área do tronco da pirâmide:</label>
+                <span id="resultado"></span>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" id="btnCalcular" class="btn btn-primary" onclick="calcTronco()">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footerDistribuition">
+           <div class="titleFooter">
+                  <h1 class="titleFooterConfig">MathlabS</h1>
+                </div>
+                <div>
+                  <ul class="listWithoutMark">
+                    <li><a href="#" class="linksFooter">Sobre Nós</a></li>
+                    <li><a href="#" class="linksFooter">Contate-nos</a></li>
+                    <li><a href="#" class="linksFooter">Recursos</a></li>
+                    <br>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="listWithoutMark">
+                    <li><a href="#"class="linksFooter">Cáculos</a></li>
+                    <li><a href="#"class="linksFooter">Serviços</a></li>
+                    <br>
+                    <br>
+                  </ul>
+              </div>
+              <div>
+                  <ul class="listWithoutMark">
+                    <li><a href="#"class="linksFooter">MathPRO</a></li>
+                    <li><a href="#"class="linksFooter">Afiliados</a></li>
+                    <li><a href="#"class="linksFooter">Seja MathlabS</a></li>
+                    <br>
+                  </ul>
+              </div>
+        </div>
+        <div class="lineFooter"></div>
+        <div class="socialMediaFooter">
+            <a href="#"><img  class="imageFooter" src="../assets/img/images/facebook.png"></a>
+            <a href="#"><img class="imageFooter" src="../assets/img/images/instagram.png"></a>
+            <a href="#"><img class="imageFooter" src="../assets/img/images/twitter.png"></a>
+            <a href="#"><img class="imageFooter" src="../assets/img/images/linkedin.png"></a>
+        </div>
+        <p>&copy; Todos os direitos reservados a Saulo S. Oliveira</p>
+</footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

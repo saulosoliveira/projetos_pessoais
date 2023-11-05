@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="png"  href="../assets/img/images/calculator.png">
+    <link rel="stylesheet" type="text/css" href="../assets/css/formas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>MathlabS</title>
+</head>
+<header>
+    <div class="headerConfig">
+        <div><h1 class="titleOne">MathLabs</h1>
+    </div>
+</header>
+
+<body background="../assets/img/images/fundo.jpg">
+    <div class="container-md">
+        <h2>Tronco da pirâmide: sólido formado por uma secção transversal, <br> paralela à base, com faces laterais
+            trapezoidais e bases poligonais.</h2>
+        <img src="../assets/img/icons/retangulo.png">
+        <div class="conteudoText">
+            <h3>O Retângulo: Uma Forma Geométrica Básica e Versátil</h3>
+            <p>O retângulo é uma das formas geométricas mais simples e amplamente reconhecidas. É definido como um
+                quadrilátero com quatro ângulos retos (ângulos de 90 graus) e lados opostos de igual comprimento. Essa
+                simplicidade é fundamental para sua versatilidade e utilidade em matemática, design e várias aplicações
+                práticas.
+            </p>
+            <br>
+
+            <h3>Características Fundamentais</h3>
+            <p>Uma das características mais distintas do retângulo são seus ângulos retos, que tornam todos os seus
+                cantos perpendiculares. Além disso, os lados opostos são paralelos e de igual comprimento, o que
+                significa que os lados opostos são congruentes. Isso faz do retângulo um quadrilátero particularmente
+                simétrico e fácil de identificar.
+            </p>
+            <br>
+
+            <h3>Área e Perímetro</h3>
+            <p>O retângulo é frequentemente utilizado em problemas de cálculo de área e perímetro. A área de um
+                retângulo pode ser calculada multiplicando-se o comprimento e a largura (A = comprimento x largura). O
+                perímetro, por sua vez, é encontrado somando-se todos os lados (P = 2 x comprimento + 2 x largura).
+            </p>
+            <br>
+
+            <h3>Aplicações Práticas</h3>
+            <p>Devido à sua simplicidade e regularidade, o retângulo é amplamente utilizado em design e arquitetura.
+                Muitos edifícios, quadros, janelas e portas apresentam formas retangulares devido à sua estabilidade
+                estrutural e facilidade de construção. Além disso, o retângulo é comum em cálculos de áreas de terrenos,
+                salas, e em muitos objetos do dia a dia, como telas de televisão e computador.
+            </p>
+            <br>
+
+            <h3>Propriedades Matemáticas</h3>
+            <p>O retângulo é uma forma geométrica com várias propriedades interessantes. Ele é um caso especial de um
+                paralelogramo, com todos os ângulos retos. Além disso, os retângulos podem ser divididos em dois
+                triângulos congruentes ao longo de suas diagonais, formando quatro ângulos retos em cada diagonal.
+            </p>
+            <br>
+
+            <h3>Conclusão</h3>
+            <p>O retângulo é uma forma geométrica fundamental que desempenha um papel significativo em nossa vida
+                cotidiana, na matemática e na engenharia. Sua simplicidade e previsibilidade o tornam uma escolha comum
+                em uma ampla gama de aplicações, tornando-o uma das formas mais reconhecíveis e úteis na geometria.
+            </p>
+
+
+        </div>
+
+        <form class="calcular">
+            <h3>Vamos calcular a área?</h3>
+            <br>
+            <div class="mb-3">
+                <label for="ladoMaior" class="form-label">Lado maior:</label>
+                <input type="number" id="ladoMaior" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="ladoMenor" class="form-label">Lado menor:</label>
+                <input type="number" id="ladoMenor" class="form-control">
+            </div>
+
+            <div class="mb-3">
+                <label for="resultado">Área do retângulo: </label>
+                <span id="resultado"></span>
+            </div>
+
+            <div class="mb-3">
+                <button type="button" id="btnCalcular" class="btn btn-primary" onclick="calcRetangulo()">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footerDistribuition">
+           <div class="titleFooter">
+                  <h1 class="titleFooterConfig">MathlabS</h1>
+                </div>
+                <div>
+                  <ul class="listWithoutMark">
+                    <li><a href="#" class="linksFooter">Sobre Nós</a></li>
+                    <li><a href="#" class="linksFooter">Contate-nos</a></li>
+                    <li><a href="#" class="linksFooter">Recursos</a></li>
+                    <br>
+                  </ul>
+                </div>
+                <div>
+                  <ul class="listWithoutMark">
+                    <li><a href="#"class="linksFooter">Cáculos</a></li>
+                    <li><a href="#"class="linksFooter">Serviços</a></li>
+                    <br>
+                    <br>
+                  </ul>
+              </div>
+              <div>
+                  <ul class="listWithoutMark">
+                    <li><a href="#"class="linksFooter">MathPRO</a></li>
+                    <li><a href="#"class="linksFooter">Afiliados</a></li>
+                    <li><a href="#"class="linksFooter">Seja MathlabS</a></li>
+                    <br>
+                  </ul>
+              </div>
+        </div>
+        <div class="lineFooter"></div>
+        <div class="socialMediaFooter">
+            <a href="#"><img  class="imageFooter" src="../assets/img/images/facebook.png"></a>
+            <a href="#"><img class="imageFooter" src="../assets/img/images/instagram.png"></a>
+            <a href="#"><img class="imageFooter" src="../assets/img/images/twitter.png"></a>
+            <a href="#"><img class="imageFooter" src="../assets/img/images/linkedin.png"></a>
+        </div>
+        <p>&copy; Todos os direitos reservados a Saulo S. Oliveira</p>
+</footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
